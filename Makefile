@@ -26,5 +26,5 @@ target/arm-unknown-linux-gnueabihf/release/plato: $(shell find src -type f)
 # RULES /!\ Run within container /!\
 
 inner-build:
-> CARGO_HOME=/plato/.cargo_home cargo build --release --target=arm-unknown-linux-gnueabihf
+> cargo build --release --target=arm-unknown-linux-gnueabihf
 .PHONY: inner-build

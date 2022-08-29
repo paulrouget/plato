@@ -38,3 +38,6 @@ RUN rustup target add arm-unknown-linux-gnueabihf
 
 # Build plato
 WORKDIR /plato
+
+# Make .cargo_home persistent
+ENV CARGO_HOME=/plato/.cargo_home
