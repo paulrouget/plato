@@ -65,6 +65,3 @@ esac
 
 cd src/mupdf_wrapper
 ./build-kobo.sh
-cd ../..
-
-cargo build --release --target=arm-unknown-linux-gnueabihf
