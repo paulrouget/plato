@@ -199,7 +199,6 @@ dependencies = [
  "filetime",
  "flate2",
  "fxhash",
- "getopts",
  "globset",
  "indexmap",
  "kl-hyphenate",
@@ -213,12 +212,9 @@ dependencies = [
  "rand_core",
  "rand_xoshiro",
  "regex",
- "reqwest",
- "sdl2",
  "septem",
  "serde",
  "serde_json",
- "signal-hook",
  "thiserror",
  "titlecase",
  "toml",
@@ -314,6 +310,15 @@ name = "entities"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5320ae4c3782150d900b79807611a59a99fc9a1d61d686faafc24b93fc8d7ca"
+
+[[package]]
+name = "fetcher"
+version = "0.9.30"
+dependencies = [
+ "core",
+ "reqwest",
+ "signal-hook",
+]
 
 [[package]]
 name = "filetime"
@@ -565,6 +570,14 @@ dependencies = [
  "matches",
  "unicode-bidi",
  "unicode-normalization",
+]
+
+[[package]]
+name = "importer"
+version = "0.9.30"
+dependencies = [
+ "core",
+ "getopts",
 ]
 
 [[package]]

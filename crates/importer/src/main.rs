@@ -1,28 +1,13 @@
-#[macro_use] mod geom;
-mod color;
-mod device;
-mod input;
-mod unit;
-mod framebuffer;
-mod helpers;
-mod font;
-mod document;
-mod library;
-mod metadata;
-mod settings;
-mod frontlight;
-mod lightsensor;
-
 use std::env;
 use std::path::Path;
 use getopts::Options;
-use chrono::{Local, TimeZone};
-use anyhow::{Error, Context, format_err};
-use crate::helpers::datetime_format;
-use crate::library::Library;
-use crate::settings::{LibraryMode, ImportSettings};
-use crate::metadata::{extract_metadata_from_document, extract_metadata_from_filename};
-use crate::metadata::{consolidate, rename_from_info};
+use core::chrono::{Local, TimeZone};
+use core::anyhow::{Error, Context, format_err};
+use core::helpers::datetime_format;
+use core::library::Library;
+use core::settings::{LibraryMode, ImportSettings};
+use core::metadata::{extract_metadata_from_document, extract_metadata_from_filename};
+use core::metadata::{consolidate, rename_from_info};
 
 fn main() -> Result<(), Error> {
     let args: Vec<String> = env::args().skip(1).collect();
