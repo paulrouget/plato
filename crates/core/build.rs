@@ -19,7 +19,6 @@ fn main() {
     // Handle the Linux and macOS platforms.
     } else {
         let target_os = env::var("CARGO_CFG_TARGET_OS").unwrap();
-
         match target_os.as_ref() {
             "linux" => {
                 println!("cargo:rustc-link-search=target/mupdf_wrapper/Linux");

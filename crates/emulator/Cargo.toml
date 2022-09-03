@@ -8,7 +8,6 @@ edition = "2021"
 name = "plato-emulator"
 path = "src/main.rs"
 
-
 [dependencies]
 core = { path = "../core" }
 sdl2 = "0.35.2"
