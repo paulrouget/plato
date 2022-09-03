@@ -13,7 +13,7 @@ use crate::document::{HumanSize, Location, Document};
 use crate::document::pdf::PdfOpener;
 use crate::font::{Fonts, font_from_style};
 use crate::geom::{Rectangle, CornerSpec, BorderSpec, halves};
-use crate::app::Context;
+use crate::context::Context;
 
 const PROGRESS_HEIGHT: f32 = 13.0;
 

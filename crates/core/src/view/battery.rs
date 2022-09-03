@@ -9,7 +9,7 @@ use crate::gesture::GestureEvent;
 use crate::battery::Status;
 use crate::unit::scale_by_dpi;
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 
 const BUMP_HEIGHT: f32 = 5.0 * THICKNESS_LARGE;
 const BUMP_WIDTH: f32 = 4.0 * THICKNESS_LARGE;

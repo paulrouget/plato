@@ -62,7 +62,7 @@ use crate::input::{DeviceEvent, FingerStatus};
 use crate::gesture::GestureEvent;
 use self::calculator::LineOrigin;
 use self::key::KeyKind;
-use crate::app::Context;
+use crate::context::Context;
 
 // Border thicknesses in pixels, at 300 DPI.
 pub const THICKNESS_SMALL: f32 = 1.0;

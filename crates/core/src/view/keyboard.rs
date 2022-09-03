@@ -10,7 +10,7 @@ use super::key::{Key, KeyKind};
 use super::BIG_BAR_HEIGHT;
 use crate::color::KEYBOARD_BG;
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 use crate::geom::Rectangle;
 use crate::unit::scale_by_dpi;
 

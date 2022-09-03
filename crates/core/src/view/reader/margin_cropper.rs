@@ -9,7 +9,7 @@ use crate::view::rounded_button::RoundedButton;
 use crate::unit::scale_by_dpi;
 use crate::color::{BLACK, WHITE, GRAY12};
 use crate::device::CURRENT_DEVICE;
-use crate::app::Context;
+use crate::context::Context;
 
 pub const BUTTON_DIAMETER: f32 = 30.0;
 

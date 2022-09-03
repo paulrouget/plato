@@ -8,7 +8,7 @@ use crate::framebuffer::{Framebuffer, UpdateMode};
 use crate::unit::mm_to_px;
 use crate::geom::{Rectangle, Dir, CycleDir};
 use crate::color::TEXT_NORMAL;
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct CodeArea {
     id: Id,

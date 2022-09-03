@@ -7,7 +7,7 @@ use crate::gesture::GestureEvent;
 use crate::input::{DeviceEvent, FingerStatus};
 use crate::unit::scale_by_dpi;
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 use crate::geom::{Rectangle, CornerSpec, BorderSpec};
 use crate::color::{TEXT_NORMAL, TEXT_INVERTED_HARD};
 

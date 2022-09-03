@@ -6,7 +6,7 @@ use crate::gesture::GestureEvent;
 use crate::font::{Fonts, font_from_style, NORMAL_STYLE, FONT_SIZES};
 use crate::geom::{Rectangle, Point, LinearDir, BorderSpec, halves};
 use crate::color::{TEXT_NORMAL, BLACK};
-use crate::app::Context;
+use crate::context::Context;
 use crate::unit::scale_by_dpi;
 
 pub struct InputField {

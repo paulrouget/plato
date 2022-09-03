@@ -10,7 +10,7 @@ use crate::framebuffer::Framebuffer;
 use crate::gesture::GestureEvent;
 use crate::color::{BLACK, WHITE};
 use crate::unit::scale_by_dpi;
-use crate::app::Context;
+use crate::context::Context;
 
 const LABEL_VALIDATE: &str = "OK";
 const LABEL_CANCEL: &str = "Cancel";

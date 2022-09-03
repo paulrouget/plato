@@ -5,7 +5,7 @@ use crate::gesture::GestureEvent;
 use crate::color::{BLACK, WHITE};
 use crate::geom::{Rectangle};
 use crate::view::{View, Event, Hub, Bus, Id, ID_FEEDER, RenderQueue, RenderData, ViewId};
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct LibraryLabel {
     id: Id,

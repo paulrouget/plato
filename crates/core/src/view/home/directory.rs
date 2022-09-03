@@ -8,7 +8,7 @@ use crate::framebuffer::Framebuffer;
 use crate::view::{View, Event, Hub, Bus, Id, ID_FEEDER, RenderQueue, Align};
 use crate::view::{THICKNESS_SMALL, BORDER_RADIUS_SMALL};
 use crate::unit::scale_by_dpi;
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct Directory {
     id: Id,

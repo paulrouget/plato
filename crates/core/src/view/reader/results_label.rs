@@ -4,7 +4,7 @@ use crate::framebuffer::{Framebuffer, UpdateMode};
 use crate::color::TEXT_NORMAL;
 use crate::geom::{Rectangle};
 use crate::view::{View, Event, Hub, Bus, Id, ID_FEEDER, RenderQueue, RenderData};
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct ResultsLabel {
     id: Id,

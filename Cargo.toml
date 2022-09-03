@@ -2,6 +2,8 @@
 
 members = [
   "crates/core",
+  "crates/plato",
+  "crates/emulator",
 ]
 
 [profile.release-minsized]

@@ -57,7 +57,7 @@ use crate::metadata::{DEFAULT_CONTRAST_EXPONENT, DEFAULT_CONTRAST_GRAY};
 use crate::geom::{Point, Vec2, Rectangle, Boundary, CornerSpec, BorderSpec};
 use crate::geom::{Dir, DiagDir, CycleDir, LinearDir, Axis, Region, halves};
 use crate::color::{BLACK, WHITE};
-use crate::app::Context;
+use crate::context::Context;
 
 const HISTORY_SIZE: usize = 32;
 const RECT_DIST_JITTER: f32 = 24.0;

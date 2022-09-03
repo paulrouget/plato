@@ -7,7 +7,7 @@ use super::preset::{Preset, PresetKind};
 use crate::gesture::GestureEvent;
 use crate::settings::LightPreset;
 use crate::color::WHITE;
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct PresetsList {
     id: Id,

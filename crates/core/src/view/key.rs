@@ -8,7 +8,7 @@ use super::icon::ICONS_PIXMAPS;
 use crate::color::{TEXT_NORMAL, TEXT_INVERTED_HARD, KEYBOARD_BG};
 use crate::font::{Fonts, font_from_style, KBD_CHAR, KBD_LABEL};
 use crate::geom::{Rectangle, LinearDir, CornerSpec};
-use crate::app::Context;
+use crate::context::Context;
 use crate::unit::scale_by_dpi;
 
 #[derive(Copy, Clone, Debug, Eq, PartialEq)]

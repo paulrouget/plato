@@ -21,7 +21,7 @@ use crate::helpers::IsHidden;
 use crate::font::Fonts;
 use crate::unit::scale_by_dpi;
 use crate::color::{BLACK, WHITE};
-use crate::app::Context;
+use crate::context::Context;
 
 const FILENAME_PATTERN: &str = "sketch-%Y%m%d_%H%M%S.png";
 const ICON_NAME: &str = "enclosed_menu";

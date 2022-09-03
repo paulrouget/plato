@@ -1,0 +1,14 @@
+[package]
+authors = ["Bastien Dejean <nihilhill@gmail.com>"]
+name = "emulator"
+version = "0.9.30"
+edition = "2021"
+
+[[bin]]
+name = "plato-emulator"
+path = "src/main.rs"
+
+
+[dependencies]
+core = { path = "../core" }
+sdl2 = "0.35.2"

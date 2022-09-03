@@ -9,7 +9,7 @@ use crate::framebuffer::{Framebuffer, UpdateMode};
 use crate::font::Fonts;
 use crate::unit::scale_by_dpi;
 use crate::color::{BLACK, WHITE, GRAY05, GRAY10};
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct TouchEvents {
     id: Id,

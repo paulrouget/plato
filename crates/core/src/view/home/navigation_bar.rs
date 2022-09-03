@@ -10,7 +10,7 @@ use crate::view::filler::Filler;
 use super::directories_bar::DirectoriesBar;
 use crate::gesture::GestureEvent;
 use crate::color::SEPARATOR_NORMAL;
-use crate::app::Context;
+use crate::context::Context;
 use crate::font::{Fonts, font_from_style, NORMAL_STYLE};
 use crate::geom::{Point, Rectangle, Dir};
 

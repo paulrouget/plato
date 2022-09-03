@@ -16,7 +16,7 @@ use crate::view::common::{locate_by_id, locate};
 use crate::view::common::{toggle_main_menu, toggle_battery_menu, toggle_clock_menu};
 use crate::gesture::GestureEvent;
 use crate::color::BLACK;
-use crate::app::Context;
+use crate::context::Context;
 use crate::view::filler::Filler;
 use crate::view::named_input::NamedInput;
 use crate::view::image::Image;

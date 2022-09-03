@@ -8,7 +8,7 @@ use crate::gesture::GestureEvent;
 use crate::input::DeviceEvent;
 use crate::color::{TEXT_BUMP_SMALL, SEPARATOR_NORMAL};
 use crate::geom::Rectangle;
-use crate::app::Context;
+use crate::context::Context;
 use crate::unit::scale_by_dpi;
 use crate::font::Fonts;
 

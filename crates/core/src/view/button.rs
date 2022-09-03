@@ -8,7 +8,7 @@ use crate::input::{DeviceEvent, FingerStatus};
 use crate::gesture::GestureEvent;
 use crate::color::{TEXT_NORMAL, TEXT_INVERTED_HARD};
 use crate::unit::scale_by_dpi;
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct Button {
     id: Id,

@@ -8,7 +8,7 @@ use crate::gesture::GestureEvent;
 use crate::input::DeviceEvent;
 use crate::geom::{Rectangle, CycleDir, halves};
 use crate::color::WHITE;
-use crate::app::Context;
+use crate::context::Context;
 use crate::font::Fonts;
 
 #[derive(Debug)]

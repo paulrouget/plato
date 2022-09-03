@@ -6,7 +6,7 @@ use crate::geom::{Rectangle};
 use crate::document::BYTES_PER_PAGE;
 use crate::framebuffer::{Framebuffer, UpdateMode};
 use super::{View, Event, Hub, Bus, Id, ID_FEEDER, RenderQueue, RenderData, ViewId};
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct PageLabel {
     id: Id,

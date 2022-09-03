@@ -14,7 +14,7 @@ use crate::unit::scale_by_dpi;
 use crate::geom::Rectangle;
 use crate::font::Fonts;
 use crate::color::{SEPARATOR_NORMAL, WHITE};
-use crate::app::Context;
+use crate::context::Context;
 
 #[derive(Debug)]
 pub struct ToolBar {

@@ -17,7 +17,7 @@ use crate::unit::scale_by_dpi;
 use crate::metadata::Info;
 use crate::geom::divide;
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 
 lazy_static! {
     static ref EXCLUSIVE_ACCESS: Mutex<u8> = Mutex::new(0);

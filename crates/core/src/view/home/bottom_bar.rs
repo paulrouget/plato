@@ -6,7 +6,7 @@ use crate::view::page_label::PageLabel;
 use super::library_label::LibraryLabel;
 use crate::geom::{Rectangle, CycleDir, halves};
 use crate::color::WHITE;
-use crate::app::Context;
+use crate::context::Context;
 use crate::font::Fonts;
 
 #[derive(Debug)]

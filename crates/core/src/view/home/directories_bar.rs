@@ -12,7 +12,7 @@ use crate::font::{Font, Fonts, font_from_style, NORMAL_STYLE};
 use crate::geom::{Point, Rectangle, Dir, CycleDir, divide, small_half, big_half};
 use crate::color::TEXT_BUMP_SMALL;
 use crate::unit::scale_by_dpi;
-use crate::app::Context;
+use crate::context::Context;
 
 #[derive(Debug)]
 pub struct DirectoriesBar {

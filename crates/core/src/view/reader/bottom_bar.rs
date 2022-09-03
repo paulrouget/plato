@@ -10,7 +10,7 @@ use crate::geom::{Rectangle, CycleDir, halves};
 use crate::document::{Document, Neighbors, TocEntry};
 use crate::color::WHITE;
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 
 #[derive(Debug)]
 pub struct BottomBar {

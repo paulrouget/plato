@@ -10,7 +10,7 @@ use super::{SMALL_BAR_HEIGHT, THICKNESS_LARGE, BORDER_RADIUS_MEDIUM};
 use crate::gesture::GestureEvent;
 use crate::input::DeviceEvent;
 use crate::unit::scale_by_dpi;
-use crate::app::Context;
+use crate::context::Context;
 
 const NOTIFICATION_CLOSE_DELAY: Duration = Duration::from_secs(4);
 

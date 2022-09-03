@@ -1,7 +1,7 @@
 use crate::framebuffer::Framebuffer;
 use super::{View, Event, Hub, Bus, Id, ID_FEEDER, RenderQueue};
 use crate::geom::Rectangle;
-use crate::app::Context;
+use crate::context::Context;
 use crate::font::Fonts;
 
 pub struct Filler {

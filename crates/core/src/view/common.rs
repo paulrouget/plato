@@ -8,7 +8,7 @@ use crate::geom::{Point, Rectangle};
 use super::{View, RenderQueue, RenderData, ViewId, AppCmd, EntryId, EntryKind};
 use super::menu::{Menu, MenuKind};
 use super::notification::Notification;
-use crate::app::Context;
+use crate::context::Context;
 
 pub fn shift(view: &mut dyn View, delta: Point) {
     *view.rect_mut() += delta;

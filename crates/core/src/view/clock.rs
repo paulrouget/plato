@@ -6,7 +6,7 @@ use crate::gesture::GestureEvent;
 use crate::font::{Fonts, font_from_style, NORMAL_STYLE};
 use crate::color::{BLACK, WHITE};
 use crate::geom::{Rectangle};
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct Clock {
     id: Id,

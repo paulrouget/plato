@@ -2,7 +2,7 @@ use crate::framebuffer::{Framebuffer, UpdateMode, Pixmap};
 use crate::view::{View, Event, Hub, Bus, Id, ID_FEEDER, RenderQueue, RenderData};
 use crate::color::WHITE;
 use crate::geom::Rectangle;
-use crate::app::Context;
+use crate::context::Context;
 use crate::font::Fonts;
 
 pub struct Image {

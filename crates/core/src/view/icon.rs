@@ -11,7 +11,7 @@ use crate::color::{TEXT_NORMAL, TEXT_INVERTED_HARD};
 use crate::unit::scale_by_dpi_raw;
 use crate::geom::{Rectangle, CornerSpec};
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 
 const ICON_SCALE: f32 = 1.0 / 32.0;
 

@@ -7,7 +7,7 @@ use crate::gesture::GestureEvent;
 use crate::framebuffer::{Framebuffer, UpdateMode};
 use crate::font::{Fonts, font_from_style, NORMAL_STYLE, DISPLAY_STYLE};
 use crate::color::{BLACK, WHITE, GRAY07};
-use crate::app::Context;
+use crate::context::Context;
 
 const MESSAGE_1: &str = "Hold you device in portrait mode\n\
                          with the Kobo logo at the bottom,\n\

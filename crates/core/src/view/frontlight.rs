@@ -15,7 +15,7 @@ use crate::gesture::GestureEvent;
 use crate::settings::{LightPreset, guess_frontlight};
 use crate::color::{BLACK, WHITE};
 use crate::unit::scale_by_dpi;
-use crate::app::Context;
+use crate::context::Context;
 
 const LABEL_SAVE: &str = "Save";
 const LABEL_GUESS: &str = "Guess";

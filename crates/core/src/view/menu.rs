@@ -12,7 +12,7 @@ use super::common::locate_by_id;
 use super::{View, Event, Hub, Bus, RenderQueue, RenderData};
 use super::{EntryKind, ViewId, Id, ID_FEEDER, CLOSE_IGNITION_DELAY};
 use super::{SMALL_BAR_HEIGHT, THICKNESS_MEDIUM, THICKNESS_LARGE, BORDER_RADIUS_MEDIUM};
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct Menu {
     id: Id,

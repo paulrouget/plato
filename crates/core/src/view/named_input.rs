@@ -10,7 +10,7 @@ use super::input_field::InputField;
 use crate::unit::scale_by_dpi;
 use crate::color::{BLACK, WHITE};
 use crate::device::CURRENT_DEVICE;
-use crate::app::Context;
+use crate::context::Context;
 
 pub struct NamedInput {
     id: Id,

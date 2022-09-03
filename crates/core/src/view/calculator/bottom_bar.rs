@@ -7,7 +7,7 @@ use crate::input::DeviceEvent;
 use crate::geom::{Rectangle, divide};
 use crate::font::Fonts;
 use crate::color::WHITE;
-use crate::app::Context;
+use crate::context::Context;
 
 #[derive(Debug)]
 pub struct BottomBar {

@@ -46,7 +46,7 @@ use crate::device::CURRENT_DEVICE;
 use crate::unit::scale_by_dpi;
 use crate::color::BLACK;
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 
 pub const TRASH_DIRNAME: &str = ".trash";
 

@@ -28,7 +28,7 @@ use crate::unit::{scale_by_dpi, mm_to_px};
 use crate::framebuffer::{Framebuffer, UpdateMode};
 use crate::font::Fonts;
 use crate::color::BLACK;
-use crate::app::Context;
+use crate::context::Context;
 
 const APP_DIR: &str = "bin/ivy";
 const APP_NAME: &str = "ivy";

@@ -8,7 +8,7 @@ use crate::view::battery::Battery;
 use crate::view::label::Label;
 use crate::geom::{Rectangle};
 use crate::font::Fonts;
-use crate::app::Context;
+use crate::context::Context;
 
 #[derive(Debug)]
 pub struct TopBar {
