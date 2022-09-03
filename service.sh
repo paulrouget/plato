@@ -5,7 +5,7 @@ if [ $# -lt 1 ]; then
 	exit 1
 fi
 
-WRAPPER_PATH=crates/core/src/mupdf_wrapper
+WRAPPER_PATH=mupdf_wrapper
 TARGET_OS=$(uname -s)
 
 if ! [ -e "${WRAPPER_PATH}/${TARGET_OS}" ]; then

@@ -6,7 +6,7 @@ fn main() {
     // Cross-compiling for Kobo.
     if target == "arm-unknown-linux-gnueabihf" {
         println!("cargo:rustc-env=PKG_CONFIG_ALLOW_CROSS=1");
-        println!("cargo:rustc-link-search=crates/core/src/mupdf_wrapper/Kobo");
+        println!("cargo:rustc-link-search=target/mupdf_wrapper/Kobo");
         println!("cargo:rustc-link-search=libs");
         println!("cargo:rustc-link-lib=dylib=stdc++");
         println!("cargo:rustc-link-lib=z");
@@ -22,11 +22,11 @@ fn main() {
 
         match target_os.as_ref() {
             "linux" => {
-                println!("cargo:rustc-link-search=crates/core/src/mupdf_wrapper/Linux");
+                println!("cargo:rustc-link-search=target/mupdf_wrapper/Linux");
                 println!("cargo:rustc-link-lib=dylib=stdc++");
             },
             "macos" => {
-                println!("cargo:rustc-link-search=crates/core/src/mupdf_wrapper/Darwin");
+                println!("cargo:rustc-link-search=target/mupdf_wrapper/Darwin");
                 println!("cargo:rustc-link-lib=dylib=c++");
             },
             _ => panic!("Unsupported platform: {}.", target_os),
