@@ -10,9 +10,6 @@ use crate::unit::{POINTS_PER_INCH, PICAS_PER_INCH, MILLIMETERS_PER_INCH, CENTIME
 const SIZE_FACTOR: f32 = 1.26;
 const ABSOLUTE_SIZE_KEYWORDS: [&str; 7] = ["xx-small", "x-small", "small", "medium", "large", "x-large", "xx-large"];
 const RELATIVE_SIZE_KEYWORDS: [&str; 2] = ["smaller", "larger"];
-// Map to: 0.25, 0.5 and 1.0 pt.
-const BORDER_WIDTH_KEYWORDS: [&str; 3] = ["thin", "medium", "thick"];
-const BORDER_STYLE_KEYWORDS: [&str; 10] = ["none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"];
 
 // TODO: vh, vw, vmin, vmax?
 pub fn parse_length(value: &str, em: f32, rem: f32, dpi: u16) -> Option<i32> {

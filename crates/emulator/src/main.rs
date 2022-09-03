@@ -44,7 +44,7 @@ use core::lightsensor::LightSensor;
 use core::library::Library;
 use core::font::Fonts;
 use core::context::Context;
-use core::{pt, rect};
+use core::pt;
 use core::png;
 
 pub const APP_NAME: &str = "Plato";
@@ -314,30 +314,27 @@ fn main() -> Result<(), Error> {
                             }
                         },
                         Mod::LSHIFTMOD | Mod::RSHIFTMOD => {
-                            ()
-                            // FIXME
-                            // match scancode {
-                            //     // let interm = match sc {
-                            //     //         Scancode::S => Some(IntermKind::Suspend),
-                            //     //         Scancode::P => Some(IntermKind::PowerOff),
-                            //     //         Scancode::C => Some(IntermKind::Share),
-                            //     //         _ => None,
-                            //     //     }
-                            //     // }
-                            //     Scancode::S | Scancode::P | Scancode::C => {
-                            //         if let Some(index) = locate::<Intermission>(view.as_ref()) {
-                            //             let rect = *view.child(index).rect();
-                            //             view.children_mut().remove(index);
-                            //             rq.add(RenderData::expose(rect, UpdateMode::Full));
-                            //         } else if let Some(kind) = IntermKind::from_scancode(scancode) {
-                            //             view.handle_event(&Event::Suspend, &tx, &mut VecDeque::new(), &mut RenderQueue::new(), &mut context);
-                            //             let interm = Intermission::new(context.fb.rect(), kind, &context);
-                            //             rq.add(RenderData::new(interm.id(), *interm.rect(), UpdateMode::Full));
-                            //             view.children_mut().push(Box::new(interm) as Box<dyn View>);
-                            //         }
-                            //     },
-                            //     _ => (),
-                            // }
+                            match scancode {
+                                Scancode::S | Scancode::P | Scancode::C => {
+                                    if let Some(index) = locate::<Intermission>(view.as_ref()) {
+                                        let rect = *view.child(index).rect();
+                                        view.children_mut().remove(index);
+                                        rq.add(RenderData::expose(rect, UpdateMode::Full));
+                                    } else {
+                                        view.handle_event(&Event::Suspend, &tx, &mut VecDeque::new(), &mut RenderQueue::new(), &mut context);
+                                        let kind = match scancode {
+                                            Scancode::S => IntermKind::Suspend,
+                                            Scancode::P => IntermKind::PowerOff,
+                                            Scancode::C => IntermKind::Share,
+                                            _ => unreachable!(),
+                                        };
+                                        let interm = Intermission::new(context.fb.rect(), kind, &context);
+                                        rq.add(RenderData::new(interm.id(), *interm.rect(), UpdateMode::Full));
+                                        view.children_mut().push(Box::new(interm) as Box<dyn View>);
+                                    }
+                                },
+                                _ => (),
+                            }
                         },
                         _ => (),
                     }

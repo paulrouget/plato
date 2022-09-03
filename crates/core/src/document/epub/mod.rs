@@ -10,7 +10,7 @@ use crate::framebuffer::Pixmap;
 use crate::helpers::{Normalize, decode_entities};
 use crate::document::{Document, Location, TextLocation, TocEntry, BoundedText, chapter_from_uri};
 use crate::unit::pt_to_px;
-use crate::geom::{Rectangle, Boundary, Edge, CycleDir};
+use crate::geom::{Boundary, CycleDir};
 use super::pdf::PdfOpener;
 use super::html::dom::{XmlTree, NodeRef};
 use super::html::engine::{Page, Engine, ResourceFetcher};
@@ -165,21 +165,21 @@ impl EpubDocument {
         })
     }
 
-    fn set_margin(&mut self, margin: &Edge) {
-        self.engine.set_margin(margin);
-        self.cache.clear();
-    }
+    // fn set_margin(&mut self, margin: &Edge) {
+    //     self.engine.set_margin(margin);
+    //     self.cache.clear();
+    // }
 
-    fn set_font_size(&mut self, font_size: f32) {
-        self.engine.set_font_size(font_size);
-        self.cache.clear();
-    }
+    // fn set_font_size(&mut self, font_size: f32) {
+    //     self.engine.set_font_size(font_size);
+    //     self.cache.clear();
+    // }
 
-    #[inline]
-    fn rect(&self) -> Rectangle {
-        let (width, height) = self.engine.dims;
-        rect![0, 0, width as i32, height as i32]
-    }
+    // #[inline]
+    // fn rect(&self) -> Rectangle {
+    //     let (width, height) = self.engine.dims;
+    //     rect![0, 0, width as i32, height as i32]
+    // }
 
     fn walk_toc_ncx(&mut self, node: NodeRef, toc_dir: &Path, index: &mut usize, cache: &mut UriCache) -> Vec<TocEntry> {
         let mut entries = Vec::new();
